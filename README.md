@@ -1,0 +1,2 @@
+# gitconfig_template
+どこのプロジェクトでも使えるgitconfigのテンプレート
