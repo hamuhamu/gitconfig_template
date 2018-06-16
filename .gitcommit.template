@@ -1,0 +1,10 @@
+refs
+
+
+# template
+#
+# refs チケット番号 コメント名
+# ex) refs 1 creation_api
+#
+# http://memo.goodpatch.co/2016/07/beautiful-commits-with-emojis/
+# 🐛 :bug: バグ修正

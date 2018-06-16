@@ -1,0 +1,18 @@
+[alias]
+    make-feature-pr = "!f () {\
+        if [ $# -lt 2 ];then \
+            echo \"$#\";\
+            echo \"Usage:\";\
+            echo \"     新しくfeatureブランチを作成しPRをリポジトリにpushする\";\
+            echo \"     git make-feature-pr <ticket_number> <functional_name>\";\
+            exit;\
+        fi;\
+        ticket_number=${1};\
+        functional_name=${2};\
+        git checkout -b \"feature/${ticket_number}_${functional_name}\";\
+        git commit --allow-empty -m \"make pull request\";\
+        git push origin HEAD;\
+    };f"
+
+[commit]
+    template = .gitcommit.template
